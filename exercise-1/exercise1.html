@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 1</title>
+    <style>
+      .item{
+        padding: 8px;
+        width: 200px;
+        background: #ccc;
+      }
+      .item.active{
+        background: #cfc;
+      }
+      .new-item input{
+        display:block;
+        margin:10px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form class="new-item">
+      <label>Item Name:</label>
+      <input class="name" type="text" placeholder="">
+
+      <label>Item Price:</label>
+      <input type="text" class="price" placeholder="">
+
+      <input class="submit" type="submit" value="Add new item">
+    </form>
+
+    <div class="items">
+      <div class="item">
+        <label>Item One</label>
+        <div class="price">$11</div>
+      </div>
+
+      <div class="item">
+        <label>Item Two</label>
+        <div class="price">$28</div>
+      </div>
+
+      <div class="item">
+        <label>Item Three</label>
+        <div class="price">$32</div>
+      </div>
+    </div>
+
+    <!-- This <script> tag imports jQuery from the jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script>
+      // Pro tip: Always write your code inside of the document's ready function
+      $(document).ready(function(){
+        // Write your code here
+      });
+    </script>
+  </body>
+</html>

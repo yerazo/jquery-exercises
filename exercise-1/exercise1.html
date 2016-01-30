@@ -51,7 +51,16 @@
     <script>
       // Pro tip: Always write your code inside of the document's ready function
       $(document).ready(function(){
-        // Write your code here
+        $('.new-item').on('click', function(event){
+          event.preventDefault();
+
+          var $form = $('form.new-item');
+
+          var $name = $('.name', $form);
+          var $price = $('price', $form);
+
+          $('.items').append('.item')
+
       });
     </script>
   </body>

@@ -26,7 +26,13 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script>
       $(document).ready(function(){
-        // Write your code here
+        $('.box').on('mouseenter', function(){
+          if($(this).hasClass('green')){
+            $(this).removeClass('green');
+          } else {
+            $(this).addClass('green');
+          }
+        });
       });
     </script>
   </body>

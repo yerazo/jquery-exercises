@@ -27,6 +27,8 @@
         </div>
 
       -->
+
+
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
@@ -62,8 +64,19 @@
         }
       ];
 
-      // Write your code here!
+      
+      $(document).ready(function(){
+        for(var i = 0; i < items.length; i++){
+          var newItem = $('<div/>').addClass('item');
+          var newLabel = $('<label/>').text(items[i].name);
+          var newPrice = $('<div/>').addClass('price').text(items[i].price);
 
+          newItem.append(newLabel, newPrice);
+
+          $('.items').append(newItem);
+        }
+        
+      });
     </script>
   </body>
 </html>
